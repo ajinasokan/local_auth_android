@@ -1,5 +1,15 @@
 This is a fork of offical local_auth_android lib with patches to support devices without fingerprint sensor.
 
+## Usage
+
+```yaml
+dependency_overrides:
+  local_auth_android:
+    git:
+      url: https://github.com/ajinasokan/local_auth_android
+      ref: 
+```
+
 ## androidx.biometric
 
 Flutter local_auth is still using biometric lib from 2021 which does't have patches for devices like Poco C3 and Redmi 10A which doesn't have a fingerprint sensor.
