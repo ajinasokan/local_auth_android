@@ -26,6 +26,7 @@ android {
     namespace 'io.flutter.plugins.localauthexample'
     compileSdk = flutter.compileSdkVersion
 
+    ndkVersion = "26.3.11579264"
 
     defaultConfig {
         applicationId "io.flutter.plugins.localauthexample"

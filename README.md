@@ -1,15 +1,13 @@
-# local\_auth\_android
+This is a fork of offical local_auth_android lib with patches to support devices without fingerprint sensor.
 
-The Android implementation of [`local_auth`][1].
+## androidx.biometric
 
-## Usage
+Flutter local_auth is still using biometric lib from 2021 which does't have patches for devices like Poco C3 and Redmi 10A which doesn't have a fingerprint sensor.
 
-This package is [endorsed][2], which means you can simply use `local_auth`
-normally. This package will be automatically included in your app when you do,
-so you do not need to add it to your `pubspec.yaml`.
+Using alpha version of androidx biometric lib `androidx.biometric:biometric:1.2.0-alpha05` for the new patches.
 
-However, if you `import` this package to use any of its APIs directly, you
-should add it to your `pubspec.yaml` as usual.
+## stickyAuth
 
-[1]: https://pub.dev/packages/local_auth
-[2]: https://flutter.dev/to/endorsed-federated-plugin
+Need to disable sticky auth, otherwise the non biometric auth page shows up twice:
+
+Issue: https://github.com/flutter/flutter/issues/157249

@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
         localizedReason: 'Let OS determine authentication method',
         authMessages: <AuthMessages>[const AndroidAuthMessages()],
         options: const AuthenticationOptions(
-          stickyAuth: true,
+          stickyAuth: false,
         ),
       );
       setState(() {
@@ -120,7 +120,7 @@ class _MyAppState extends State<MyApp> {
             'Scan your fingerprint (or face or whatever) to authenticate',
         authMessages: <AuthMessages>[const AndroidAuthMessages()],
         options: const AuthenticationOptions(
-          stickyAuth: true,
+          stickyAuth: false,
           biometricOnly: true,
         ),
       );
